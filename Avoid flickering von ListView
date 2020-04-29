@@ -1,5 +1,4 @@
 // avoid flicking on listviews
-listView
-  .GetType()
+listView.GetType()
 	.GetProperty("DoubleBuffered", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic)
 	.SetValue(listView, true, null);
